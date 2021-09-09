@@ -57,6 +57,11 @@ body {
     margin-top: 15px;
 }
 
+.nav {
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
 .log-boolean,
 .log-undefined {color: magenta;}
 .log-object,

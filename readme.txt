@@ -31,6 +31,3 @@ array at each iteration in order to render that row, since otherwise I
 could only access the array's final state at algorithm completion.
 (i.e. only the bottom row of the triangle).
 Dave Gray deals with this problem in a much better way.
-
-
-
