@@ -12,8 +12,18 @@ It builds a Pascal's Triangle.
 It is an algorithm question regularily used in job interviews. 
 Dave Gray's solution is index.html.
 My solution is pascal.html. 
-Whichever solution is highlighted is the one that will run 
-when 'Go Live' (bottom right of vscode) is pressed.
+
+To run locally:
+    press 'Go Live' at bottom right of vscode
+
+Deployed at:
+
+
+To update:
+    make changes locally
+    git add . 
+    git commit -m "message"
+    git push    
 
 For my solution I borrowed some code that renders console.log output
 directly to the page. This was so that I could access the state of the
