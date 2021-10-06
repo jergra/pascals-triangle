@@ -1,4 +1,4 @@
-/* from pascal.html */
+/* from myVersion.html */
 function promptPromise(message) {
     return new Promise(function(resolve, reject) {
       var result = window.prompt(message);
@@ -22,7 +22,7 @@ button.addEventListener('click', function() {
         output.innerHTML = name;
         size = name
         
-        /* the next 5 lines are from below, not from pascal.html */
+        /* the next 5 lines are from below, not from myVersion.html */
         const initApp = (size) => {
             console.log("size:", size)
             const ptArray = pascalsTriangle(size);
@@ -41,7 +41,7 @@ buttonClear.addEventListener('click', function() {
     location.reload()
 });
 
-/* end of pascal.html contribution */
+/* end of myVersion.html contribution */
 
 /*
 const initApp = (size) => {
@@ -94,10 +94,16 @@ const buildRow = (array) => {
         const square = document.createElement('div');
         square.classList.add("square");
         square.textContent = el;
+        randomColor1 = Math.floor(Math.random() * 45) + 20;
+        randomColor2 = Math.floor(Math.random() * 60) + 120;
+        randomColor3 = Math.floor(Math.random() * 45) + 20;
+        square.style.background = 'rgb(' + randomColor1 + ',' + randomColor2 + ',' + randomColor3 + ')'
         row.appendChild(square);
     })
     return row;
 }
+
+
 
 
 

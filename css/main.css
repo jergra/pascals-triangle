@@ -9,8 +9,11 @@ html {
 }
 
 body {
+    background: #333;
     min-height: 100vh;
     padding-left: 1rem;
+    position: relative;
+    padding-bottom: 60px;
 }
 
 .row {
@@ -21,6 +24,7 @@ body {
 }
 
 .square {
+    background-color: white;
     border: 1px solid #000;
     width: 40px;
     height: 40px;
@@ -29,17 +33,122 @@ body {
 }
 
 .square:first-child {
-    background-color: aqua;
+    background-color: yellowgreen;
 }
 
 .square:nth-child(2) {
-    background-color: lightgoldenrodyellow;
+    background-color: green;
 }
 
 .square:nth-child(3) {
     background-color: dodgerblue;
 }
 
+.square:nth-child(4) {
+    background-color: green;
+}
+
+.square:nth-child(5) {
+    background-color: aqua;
+}
+
+.square:nth-child(6) {
+    background-color: green;
+}
+
+.square:nth-child(7) {
+    background-color: teal;
+}
+
+.square:nth-child(8) {
+    background-color: green;
+}
+
+.square:nth-child(9) {
+    background-color: aquamarine;
+}
+
+.square:nth-child(10) {
+    background-color: green;
+}
+
+.square:nth-child(11) {
+    background-color: chartreuse;
+}
+
+.square:nth-child(12) {
+    background-color: green;
+}
+
+.square:nth-child(13) {
+    background-color: cyan;
+}
+
+.square:nth-child(14) {
+    background-color: green;
+}
+
+.square:nth-child(15) {
+    background-color: olive;
+}
+
+.square:nth-child(16) {
+    background-color: green;
+}
+
+.square:nth-child(17) {
+    background-color: lightblue;
+}
+
+.square:nth-child(18) {
+    background-color: green;
+}
+
+.square:nth-child(19) {
+    background-color: royalblue;
+}
+
+.square:nth-child(20) {
+    background-color: green;
+}
+
+.square:nth-child(21) {
+    background-color: powderblue;
+}
+
+.square:nth-child(22) {
+    background-color: green;
+}
+
+.square:nth-child(23) {
+    background-color: mediumturquoise;
+}
+
+.square:nth-child(24) {
+    background-color: green;
+}
+
+.square:nth-child(25) {
+    background-color: forestgreen;
+}
+
+.square:nth-child(26) {
+    background-color: green;
+}
+.square:nth-child(27) {
+    background-color: lightcyan;
+}
+
+.square:nth-child(28) {
+    background-color: green;
+}
+.square:nth-child(29) {
+    background-color: paleturquoise;
+}
+
+.square:nth-child(30) {
+    background-color: green;
+}
 .squareHidden {
     display: none;
 }
@@ -53,8 +162,11 @@ body {
 
 .buttons {
     display: flex;
-    font-family:  Helvetica; font-size: 12px;
+    font-family:  Helvetica; 
+    font-size: 12px;
     margin-top: 15px;
+    height: 25px;
+    align-items: center;
 }
 
 .nav {
@@ -71,4 +183,22 @@ body {
     width: 900px;
     text-align: center;
     margin-top: -15px;
+}
+
+button {
+    background: white;
+    padding: 4px 8px;
+    border: none;
+}
+
+.citation {
+    width: 100vw;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 30px;
+}
+a {
+    text-decoration: none;
+    color: yellowgreen;
 }

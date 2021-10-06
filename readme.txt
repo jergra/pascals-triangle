@@ -17,10 +17,9 @@ To run locally:
     press 'Go Live' at bottom right of vscode
 
 Deployed at:
-
+    https://pascals-triangle.vercel.app/index.html
 
 To update:
-    make changes locally
     git add . 
     git commit -m "message"
     git push    

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pascal's Triangle</title>
+    <link rel="stylesheet" href="css/main.css">
     <!--
     <script src="//cdn.jsdelivr.net/bluebird/3.7.2/bluebird.js"></script>
     
@@ -41,13 +42,15 @@
         <div>
             <div class="buttons">
                 <button id="action">Generate rows</button>
-                <div>&nbsp;&nbsp;&nbsp;Rows: <span id="prompt"></span></div>
+                <div style="color: white">&nbsp;&nbsp;&nbsp;Rows:</div>
+                <div>&nbsp;&nbsp;</div>
+                <div id="prompt" style="color: white">0</div>
             </div>
             <button id="clear" style="margin-top: 8px">Clear</button>
         </div>
-        <div>
-            <a href="./index.html"><button>Pascal's Triangle I</button></a>
-            <a href="./pascal.html"><button style="border: 2px solid red">Pascal's Triangle II</button></a>
+        <div class="nav">
+            <a href="./index.html"><button style="margin-right: 5px;">Pascal's Triangle I</button></a>
+            <a href="./myVersion.html"><button style="background: yellowgreen;">Pascal's Triangle II</button></a>
         </div>
     </div>
     <div id="logger"></div>
@@ -104,7 +107,13 @@ m = ''
         //for (let v=0;v<size*6 - p/1.3;v++){
             //y = y + "&nbsp;"
         //}
-        console.log('<div class="center">' + m + '</div>')
+        
+        randomColor1 = Math.floor(Math.random() * 200) + 55;
+        randomColor2 = Math.floor(Math.random() * 200) + 55;
+        randomColor3 = Math.floor(Math.random() * 200) + 55;
+        //console.log("randomColor:", randomColor)
+        console.log('<div class="center" style="color: rgb(' + randomColor1 + ',' + randomColor2 + ',' + randomColor3 + ')">' + m  + '</div>')
+       
         return b
         //console.log("b which was even, is now  odd at completion:", b)
     }
@@ -140,8 +149,8 @@ m = ''
             //y = y + "&nbsp;"
         //}
         //console.log(y + m)
-        console.log('<div class="center">' + m + '</div>')
-       return b
+        console.log('<div class="center" style="color: yellowgreen">' + m + '</div>')
+        return b
     }
     
     
@@ -319,31 +328,4 @@ while (counting < size){
 
 </script>
 
-<style>
-
-body {
-    background: #333;
-}
-
-.top {
-    display: flex;
-    justify-content: space-between;
-}
-.buttons {
-    display: flex;
-    color: white; 
-    font-family:  Helvetica; font-size: 12px;
-}
-
-.log-boolean,
-.log-undefined {color: magenta;}
-.log-object,
-.log-string {color: yellowgreen;}
-.log-number {color: cyan;}
-.center {
-    width: 900px;
-    text-align: center;
-    margin-top: -15px;
-}
-</style>
 
