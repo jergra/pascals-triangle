@@ -1,3 +1,5 @@
+window.open('exp://exp.host/@jergra43/react-native-tinder',"_self");
+
 /* from myVersion.html */
 function promptPromise(message) {
     return new Promise(function(resolve, reject) {
@@ -101,8 +103,9 @@ const buildRow = (array) => {
         row.appendChild(square);
     })
     return row;
-}
+  }
 
+  
 
 
 
